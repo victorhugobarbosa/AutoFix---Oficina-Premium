@@ -21,7 +21,7 @@ export default function CTA() {
                         </p>
                     </div>
 
-                    <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <form className="grid grid-cols-1 md:grid-cols-2 gap-6" onSubmit={(e) => e.preventDefault()}>
                         <div className="space-y-2">
                             <label className="text-sm text-gray-400 uppercase tracking-wider font-bold">Nome</label>
                             <input
@@ -57,9 +57,14 @@ export default function CTA() {
                         </div>
 
                         <div className="md:col-span-2 mt-4">
-                            <button className="w-full bg-safety-orange hover:bg-orange-600 text-white text-lg font-bold py-4 rounded uppercase tracking-wider transition-all hover:shadow-[0_0_20px_rgba(255,107,0,0.3)]">
-                                Agendar Visita
-                            </button>
+                            <a
+                                href="https://wa.me/5519995828604?text=Olá, gostaria de agendar uma visita."
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-full bg-safety-orange hover:bg-orange-600 text-white text-lg font-bold py-4 rounded uppercase tracking-wider transition-all hover:shadow-[0_0_20px_rgba(255,107,0,0.3)] block text-center"
+                            >
+                                Agendar Visita via WhatsApp
+                            </a>
                         </div>
                     </form>
 

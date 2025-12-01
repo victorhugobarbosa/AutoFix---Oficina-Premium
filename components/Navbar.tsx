@@ -50,9 +50,14 @@ export default function Navbar() {
                             {link.name}
                         </Link>
                     ))}
-                    <button className="bg-safety-orange hover:bg-orange-600 text-white px-6 py-2 rounded font-bold uppercase tracking-wider transition-colors text-sm">
+                    <a
+                        href="https://wa.me/5519995828604?text=Olá, gostaria de agendar um horário."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-safety-orange hover:bg-orange-600 text-white px-6 py-2 rounded font-bold uppercase tracking-wider transition-colors text-sm"
+                    >
                         Agendar Agora
-                    </button>
+                    </a>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -84,9 +89,14 @@ export default function Navbar() {
                                     {link.name}
                                 </Link>
                             ))}
-                            <button className="bg-safety-orange text-white px-6 py-3 rounded font-bold uppercase tracking-wider w-full">
+                            <a
+                                href="https://wa.me/5519995828604?text=Olá, gostaria de agendar um horário."
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-safety-orange text-white px-6 py-3 rounded font-bold uppercase tracking-wider w-full text-center block"
+                            >
                                 Agendar Agora
-                            </button>
+                            </a>
                         </div>
                     </motion.div>
                 )}

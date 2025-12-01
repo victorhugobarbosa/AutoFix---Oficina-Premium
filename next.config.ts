@@ -1,11 +1,13 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig: NextConfig = {
   output: "export",
   images: {
     unoptimized: true,
   },
-  basePath: "/AutoFix---Oficina-Premium",
+  basePath: isProd ? "/AutoFix---Oficina-Premium" : "",
   reactCompiler: true,
 };
 

@@ -58,11 +58,10 @@ export default function TrustSection() {
                             transition={{ duration: 0.8 }}
                             className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden"
                         >
-                            <div
-                                className="absolute inset-0 bg-cover bg-center"
-                                style={{
-                                    backgroundImage: "url('https://images.unsplash.com/photo-1530046339160-71153320c746?auto=format&fit=crop&q=80')",
-                                }}
+                            <img
+                                src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=1974&auto=format&fit=crop"
+                                alt="Mecânico trabalhando"
+                                className="absolute inset-0 w-full h-full object-cover"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent" />
                         </motion.div>

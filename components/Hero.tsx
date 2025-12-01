@@ -46,10 +46,15 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
                 >
-                    <button className="group bg-safety-orange hover:bg-orange-600 text-white text-lg px-8 py-4 rounded font-bold uppercase tracking-wider transition-all flex items-center gap-2 mx-auto hover:scale-105">
+                    <a
+                        href="https://wa.me/5519995828604?text=Olá, gostaria de solicitar um orçamento."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group bg-safety-orange hover:bg-orange-600 text-white text-lg px-8 py-4 rounded font-bold uppercase tracking-wider transition-all flex items-center gap-2 mx-auto hover:scale-105 w-fit"
+                    >
                         Solicitar Orçamento via WhatsApp
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                    </button>
+                    </a>
                 </motion.div>
             </div>
         </section>
